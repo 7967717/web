@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>StockWatcher.html</welcome-file>
+  </welcome-file-list>
+
+  <!-- Servlets -->
+  <!--for GWT RPC-->
+  <servlet>
+    <servlet-name>stockPriceServiceImpl</servlet-name>
+    <servlet-class>com.romanrudenko.stockwatcher.server.StockPriceServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>stockPriceServiceImpl</servlet-name>
+    <url-pattern>/stockwatcher/stockPrices</url-pattern>
+  </servlet-mapping>
+
+  <!-- to retrieve JSON data  -->
+  <!--<servlet>-->
+    <!--<servlet-name>jsonStockData</servlet-name>-->
+    <!--<servlet-class>com.romanrudenko.stockwatcher.server.JsonStockData</servlet-class>-->
+  <!--</servlet>-->
+
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>jsonStockData</servlet-name>-->
+    <!--<url-pattern>/stockwatcher/stockPrices</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+
+</web-app>

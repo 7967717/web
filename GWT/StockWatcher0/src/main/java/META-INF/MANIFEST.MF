@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: roman.rudenko
+Implementation-Vendor-Id: com.romanrudenko.stockwatcher
+Build-Time: 20151229-1503
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.7.0_80
+
